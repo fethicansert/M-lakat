@@ -39,7 +39,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
       child: DropdownButtonHideUnderline(
         child: DropdownButton(
           value: value,
-          itemHeight: 54,
+          itemHeight: 54.37,
           borderRadius: BorderRadius.circular(10),
           menuMaxHeight: 300,
           dropdownColor: const Color.fromRGBO(231, 28, 113, .5),
@@ -55,28 +55,33 @@ class _CustomDropdownState extends State<CustomDropdown> {
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
                       color: CustomColorStyles.secondaryColor),
-                  height: 54,
+                  height: 54.37,
                   margin: const EdgeInsets.symmetric(vertical: 4),
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        height: 35,
-                        width: 35,
-                        child: CircleAvatar(
-                          backgroundColor: CustomColorStyles.secondaryColor,
-                          backgroundImage: AssetImage(item['image']!),
-                        ),
-                      ),
                       Container(
-                          margin: const EdgeInsets.only(left: 10),
-                          child: Text(
-                            item['label']!,
-                            style: const TextStyle(
-                                fontFamily: 'Ambit',
-                                fontSize: 13,
-                                fontWeight: FontWeight.w400),
-                          ))
+                          width: widget.type != 'friends' ? 22 : 30.05,
+                          height: widget.type != 'friends' ? 21 : 30.05,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(
+                                widget.type == 'friends' ? 20 : 0),
+                            image: DecorationImage(
+                                image: AssetImage(item['image']!),
+                                fit: BoxFit.cover),
+                          )),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        item['label']!,
+                        style: const TextStyle(
+                            fontFamily: 'Ambit',
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                            color: Color.fromRGBO(62, 63, 76, 1)),
+                      )
                     ],
                   ),
                 ));

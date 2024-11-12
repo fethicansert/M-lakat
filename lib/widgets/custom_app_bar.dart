@@ -27,7 +27,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 fontSize: 15,
                 fontWeight: FontWeight.w600,
                 height: 17.25 / 15,
-                fontFamily: "Ambit SemiBold"),
+                fontFamily: "Ambit"),
           ),
           if (showBackButton != null)
             Positioned(

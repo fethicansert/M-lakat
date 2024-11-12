@@ -25,9 +25,7 @@ class UserInfo extends StatelessWidget {
           Text(
             user.username,
             style: const TextStyle(
-                fontFamily: "Ambit SemiBold",
-                fontSize: 15,
-                fontWeight: FontWeight.w600),
+                fontFamily: "Ambit", fontSize: 15, fontWeight: FontWeight.w600),
           ),
           const SizedBox(
             height: 3,
@@ -35,9 +33,7 @@ class UserInfo extends StatelessWidget {
           Text(
             user.email,
             style: const TextStyle(
-                fontFamily: "Ambit Light",
-                fontSize: 12,
-                fontWeight: FontWeight.w300),
+                fontFamily: "Ambit", fontSize: 12, fontWeight: FontWeight.w300),
           ),
           const SizedBox(height: 12),
 
@@ -53,8 +49,8 @@ class UserInfo extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.asset(
-                      'assets/images/icons/messageIcon.png',
-                      width: 18,
+                      'assets/images/icons/chat.png',
+                      width: 18.05,
                     ),
                     const SizedBox(
                       width: 6,
@@ -62,7 +58,7 @@ class UserInfo extends StatelessWidget {
                     Text(
                       user.messageCount.toString(),
                       style: const TextStyle(
-                          fontFamily: "Ambit SemiBold",
+                          fontFamily: "Ambit",
                           fontSize: 12.89,
                           fontWeight: FontWeight.w600),
                     ),
@@ -75,8 +71,8 @@ class UserInfo extends StatelessWidget {
                       ),
                     ),
                     Image.asset(
-                      'assets/images/icons/imageIcon.png',
-                      width: 18,
+                      'assets/images/icons/image.png',
+                      width: 18.05,
                     ),
                     const SizedBox(
                       width: 6,
@@ -87,7 +83,7 @@ class UserInfo extends StatelessWidget {
                           ? "0${user.imageCount}"
                           : user.imageCount.toString(),
                       style: const TextStyle(
-                          fontFamily: "Ambit SemiBold",
+                          fontFamily: "Ambit",
                           fontSize: 12.89,
                           fontWeight: FontWeight.w600),
                     )
@@ -107,30 +103,30 @@ class UserInfo extends StatelessWidget {
                       Border.all(color: const Color.fromRGBO(231, 28, 113, .3)),
                   borderRadius: BorderRadius.circular(100)),
               child: Padding(
-                padding: const EdgeInsets.all(3),
+                padding: const EdgeInsets.all(2.5),
                 child: Container(
-                  height: 37,
-                  width: 154,
+                  height: 36.6,
+                  width: 156.02,
                   decoration: BoxDecoration(
                       boxShadow: [
                         const BoxShadow(
                             color: Color.fromRGBO(255, 255, 255, .7)),
                         BoxShadow(
                             blurStyle: BlurStyle.inner,
-                            blurRadius: 13,
+                            blurRadius: 12,
                             color: CustomColorStyles.primaryColor)
                       ],
                       image: const DecorationImage(
-                        image: AssetImage('assets/images/grain2.png'),
-                        fit: BoxFit.fill,
-                      ),
+                          image: AssetImage('assets/images/grain.png'),
+                          fit: BoxFit.fill,
+                          opacity: 0.6),
                       borderRadius: BorderRadius.circular(100)),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image(
                         image: AssetImage('assets/images/icons/lightening.png'),
-                        width: 13.5,
+                        width: 16.55,
                       ),
                       SizedBox(
                         width: 6,
@@ -158,8 +154,8 @@ class UserInfo extends StatelessWidget {
               print("Edin Profile Button Clicked");
             },
             child: Container(
-              height: 42.1,
-              width: 162.3,
+              height: 42.48,
+              width: 162.45,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
                   border: Border.all(color: const Color.fromRGBO(0, 0, 0, .3))),
@@ -167,7 +163,7 @@ class UserInfo extends StatelessWidget {
                 child: Text(
                   "Profili Düzenle",
                   style: TextStyle(
-                      fontFamily: "Ambit Regular",
+                      fontFamily: "Ambit",
                       fontSize: 11,
                       fontWeight: FontWeight.w400,
                       color: Colors.black),

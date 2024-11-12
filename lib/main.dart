@@ -156,19 +156,19 @@ class _HomeState extends State<Home> {
 
                 //Message Notfication Option
                 NotifactionOption(
-                  imageIcon: "assets/images/icons/messageThinIcon.png",
+                  imageIcon: "assets/images/icons/messageThin.png",
                   label: "Mesajlar",
                 ),
 
                 //Images Notfication Option
                 NotifactionOption(
-                  imageIcon: "assets/images/icons/imageThinIcon.png",
+                  imageIcon: "assets/images/icons/imageThin.png",
                   label: "Fotoğraflar",
                 ),
 
                 //Clothe Gifts Notfication Option
                 NotifactionOption(
-                  imageIcon: "assets/images/icons/beanieThinIcon.png",
+                  imageIcon: "assets/images/icons/hatThin.png",
                   label: "Kıyafet Hediyeleri",
                 ),
 

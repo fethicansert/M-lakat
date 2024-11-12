@@ -53,7 +53,7 @@ class _ButtonState extends State<Button> {
           widget.label,
           style: TextStyle(
               height: 14 / 12,
-              fontFamily: isSelected ? "Ambit Bold" : "Ambit",
+              fontFamily: "Ambit",
               fontSize: 12,
               fontWeight: isSelected ? FontWeight.w700 : FontWeight.w400,
               color: isSelected

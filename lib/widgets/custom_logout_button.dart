@@ -25,12 +25,12 @@ class LogoutButton extends StatelessWidget {
               "Çıkış Yap",
               style: TextStyle(
                   color: Color.fromRGBO(62, 63, 76, 1),
-                  fontFamily: "Ambit SemiBold",
+                  fontFamily: "Ambit",
                   fontSize: 15,
                   fontWeight: FontWeight.w600),
             ),
             Image(
-              image: AssetImage('assets/images/icons/logoutIcon.png'),
+              image: AssetImage('assets/images/icons/logout.png'),
               width: 24,
             )
           ],

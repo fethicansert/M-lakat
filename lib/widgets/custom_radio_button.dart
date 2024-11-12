@@ -45,12 +45,12 @@ class CustomRadioButton extends StatelessWidget {
               child: Text(
                 text,
                 style: TextStyle(
-                    fontFamily: isSelected ? "Ambit SemiBold" : "Ambit Regular",
+                    fontFamily: "Ambit",
                     fontSize: 11,
                     fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
                     color: isSelected
                         ? CustomColorStyles.primaryColor
-                        : const Color.fromRGBO(96, 100, 139, 1)),
+                        : const Color.fromRGBO(96, 100, 139, .4)),
               ),
             )
           ],

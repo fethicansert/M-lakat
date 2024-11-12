@@ -4,7 +4,11 @@ List<Map<String, String>> bdsmModes = [
     'image': 'assets/images/bdsm/mouth.png',
     'label': "Aşagılayıcı Konuşma"
   },
-  {'id': '2', 'image': 'assets/images/bdsm/talimat.png', 'label': "Talimat"},
+  {
+    'id': '2',
+    'image': 'assets/images/bdsm/instructions.png',
+    'label': "Talimat Ver"
+  },
   {
     'id': '3',
     'image': 'assets/images/bdsm/eye.png',
@@ -21,8 +25,8 @@ List<Map<String, String>> petPlays = [
   },
   {
     'id': '3',
-    'image': 'assets/images/petplays/ahtapot.png',
-    'label': "Ahtapot Rolü"
+    'image': 'assets/images/petplays/monkey.png',
+    'label': "Maymun Rolü"
   },
 ];
 
@@ -32,7 +36,7 @@ List<Map<String, String>> rolePlays = [
     'image': 'assets/images/roleplays/teacher.png',
     'label': "Öğretmen"
   },
-  {'id': '2', 'image': 'assets/images/roleplays/boss.png', 'label': "Patron"},
+  {'id': '2', 'image': 'assets/images/roleplays/hero.png', 'label': "Kahraman"},
   {'id': '3', 'image': 'assets/images/roleplays/police.png', 'label': "Polis"},
 ];
 

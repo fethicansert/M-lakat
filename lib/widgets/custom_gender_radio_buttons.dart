@@ -61,7 +61,7 @@ class _GenderRadioState extends State<GenderRadioButtons> {
               selectGender: selectGender,
               isSelected: "gay" == selectedGender,
               imageName: "gay",
-              imageSize: 23),
+              imageSize: 23.01),
         ],
       ),
     );
