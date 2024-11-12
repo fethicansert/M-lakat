@@ -38,61 +38,61 @@ class UserInfo extends StatelessWidget {
           const SizedBox(height: 12),
 
           Container(
+            height: 33.27,
+            width: 112.99,
             decoration: BoxDecoration(
                 color: const Color.fromRGBO(0, 0, 0, .03),
-                borderRadius: BorderRadius.circular(20)),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(15, 9, 15, 9),
-              child: IntrinsicHeight(
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Image.asset(
-                      'assets/images/icons/chat.png',
-                      width: 18.05,
-                    ),
-                    const SizedBox(
-                      width: 6,
-                    ),
-                    Text(
-                      user.messageCount.toString(),
-                      style: const TextStyle(
-                          fontFamily: "Ambit",
-                          fontSize: 12.89,
-                          fontWeight: FontWeight.w600),
-                    ),
-                    const SizedBox(
-                      height: 23,
-                      child: VerticalDivider(
-                        width: 24,
-                        color: Color.fromRGBO(0, 0, 0, .2),
-                        thickness: 2,
-                      ),
-                    ),
-                    Image.asset(
-                      'assets/images/icons/image.png',
-                      width: 18.05,
-                    ),
-                    const SizedBox(
-                      width: 6,
-                    ),
-                    //if image count smaller than 10 add 0 as string
-                    Text(
-                      user.imageCount < 10
-                          ? "0${user.imageCount}"
-                          : user.imageCount.toString(),
-                      style: const TextStyle(
-                          fontFamily: "Ambit",
-                          fontSize: 12.89,
-                          fontWeight: FontWeight.w600),
-                    )
-                  ],
-                ),
+                borderRadius: BorderRadius.circular(26.03)),
+            child: Center(
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    'assets/images/icons/chat.png',
+                    width: 18.05,
+                  ),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  Text(
+                    user.messageCount.toString(),
+                    style: const TextStyle(
+                        height: 15 / 12.89,
+                        fontFamily: "Ambit",
+                        fontSize: 12.89,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  const VerticalDivider(
+                    indent: (33.27 - 16.49) / 2,
+                    endIndent: (33.27 - 16.49) / 2,
+                    width: 16.49,
+                    color: Color.fromRGBO(0, 0, 0, .2),
+                    thickness: 1.29,
+                  ),
+                  Image.asset(
+                    'assets/images/icons/image.png',
+                    width: 19.05,
+                  ),
+                  const SizedBox(
+                    width: 4,
+                  ),
+                  //if image count smaller than 10 add 0 as string
+                  Text(
+                    user.imageCount < 10
+                        ? "0${user.imageCount}"
+                        : user.imageCount.toString(),
+                    style: const TextStyle(
+                        height: 15 / 12.89,
+                        fontFamily: "Ambit",
+                        fontSize: 12.89,
+                        fontWeight: FontWeight.w600),
+                  )
+                ],
               ),
             ),
           ),
-          const SizedBox(height: 28),
+          const SizedBox(height: 23),
           InkWell(
             onTap: () {
               print("Premium Button Clicked");
@@ -158,15 +158,16 @@ class UserInfo extends StatelessWidget {
               width: 162.45,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(100),
-                  border: Border.all(color: const Color.fromRGBO(0, 0, 0, .3))),
+                  border:
+                      Border.all(color: const Color.fromRGBO(29, 29, 29, .3))),
               child: const Center(
                 child: Text(
                   "Profili Düzenle",
                   style: TextStyle(
                       fontFamily: "Ambit",
-                      fontSize: 11,
+                      fontSize: 12,
                       fontWeight: FontWeight.w400,
-                      color: Colors.black),
+                      color: Color.fromRGBO(62, 63, 76, 1)),
                 ),
               ),
             ),

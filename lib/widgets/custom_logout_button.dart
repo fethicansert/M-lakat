@@ -11,7 +11,6 @@ class LogoutButton extends StatelessWidget {
         print("Log Out Button Pressed");
       },
       child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 10),
         padding: const EdgeInsets.symmetric(horizontal: 20),
         width: double.infinity,
         height: 53.31,

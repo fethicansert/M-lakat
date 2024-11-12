@@ -15,13 +15,16 @@ class CustomSwitch extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 2),
         decoration: BoxDecoration(
-            border: Border.all(color: const Color.fromRGBO(0, 0, 0, .05)),
-            color: !isActive
-                ? const Color.fromARGB(126, 218, 220, 225)
-                : CustomColorStyles.secondaryColor,
+            border: Border.all(
+                color: isActive
+                    ? Colors.transparent
+                    : const Color.fromRGBO(0, 0, 0, .1)),
+            color: isActive
+                ? const Color.fromRGBO(200, 208, 226, .3)
+                : Colors.transparent,
             borderRadius: BorderRadius.circular(20)),
-        width: 42,
-        height: 23,
+        width: 42.95,
+        height: 23.24,
         child: Align(
           alignment: Alignment.centerLeft,
           child: AnimatedContainer(
@@ -37,8 +40,8 @@ class CustomSwitch extends StatelessWidget {
               ],
               borderRadius: BorderRadius.circular(20),
             ),
-            width: 18,
-            height: 18,
+            width: 18.06,
+            height: 18.06,
           ),
         ),
       ),

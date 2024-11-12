@@ -23,11 +23,11 @@ class _GenderRadioState extends State<GenderRadioButtons> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 73,
+      height: 73.17,
       decoration: BoxDecoration(
           color: CustomColorStyles.secondaryColor,
           border: Border.all(color: const Color.fromRGBO(0, 0, 0, .05)),
-          borderRadius: BorderRadius.circular(20)),
+          borderRadius: BorderRadius.circular(18)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -73,8 +73,8 @@ class _GenderRadioState extends State<GenderRadioButtons> {
       child: VerticalDivider(
         color: Color.fromRGBO(0, 0, 0, .2),
         thickness: .4,
-        indent: 20,
-        endIndent: 20,
+        indent: (73.17 - 29.84) / 2,
+        endIndent: (73.17 - 29.84) / 2,
       ),
     );
   }

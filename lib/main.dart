@@ -7,8 +7,8 @@ import '/models/user.dart';
 
 //Custom Widget Imports
 import '/widgets/custom_header.dart';
-import '/widgets/sexual_personality_modes.dart';
-import 'widgets/custom_notifaction_option.dart';
+import 'widgets/custom_sexual_personality_modes.dart';
+import 'widgets/custom_notification_option.dart';
 import 'widgets/custom_app_bar.dart';
 import 'widgets/custom_user_info.dart';
 import 'widgets/custom_dropdown.dart';
@@ -155,19 +155,19 @@ class _HomeState extends State<Home> {
                 ),
 
                 //Message Notfication Option
-                NotifactionOption(
+                NotificationOption(
                   imageIcon: "assets/images/icons/messageThin.png",
                   label: "Mesajlar",
                 ),
 
                 //Images Notfication Option
-                NotifactionOption(
+                NotificationOption(
                   imageIcon: "assets/images/icons/imageThin.png",
                   label: "Fotoğraflar",
                 ),
 
                 //Clothe Gifts Notfication Option
-                NotifactionOption(
+                NotificationOption(
                   imageIcon: "assets/images/icons/hatThin.png",
                   label: "Kıyafet Hediyeleri",
                 ),

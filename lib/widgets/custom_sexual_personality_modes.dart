@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/widgets/custom_button.dart';
+import 'package:flutter_application_1/widgets/custom_sexual_personality_button.dart';
 
 class SexualPersonalityModes extends StatefulWidget {
   final List<String> sexualPersonalityModes;
@@ -33,8 +33,8 @@ class _SexualPersonalityModesState extends State<SexualPersonalityModes> {
         runSpacing: 10,
         spacing: 8,
         children: widget.sexualPersonalityModes
-            .map((label) =>
-                Button(label: label, addMode: addMode, removeMode: removeMode))
+            .map((label) => SexualPersonalityButton(
+                label: label, addMode: addMode, removeMode: removeMode))
             .toList(),
       ),
     );

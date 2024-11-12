@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/styles/color_styles.dart';
 
-class Button extends StatefulWidget {
+class SexualPersonalityButton extends StatefulWidget {
   final String label;
   final Function addMode;
   final Function removeMode;
 
-  const Button(
+  const SexualPersonalityButton(
       {super.key,
       required this.label,
       required this.addMode,
       required this.removeMode});
 
   @override
-  State<Button> createState() => _ButtonState();
+  State<SexualPersonalityButton> createState() =>
+      _SexualPersonalityButtonState();
 }
 
-class _ButtonState extends State<Button> {
+class _SexualPersonalityButtonState extends State<SexualPersonalityButton> {
   bool isSelected = false;
 
   @override
@@ -34,7 +35,7 @@ class _ButtonState extends State<Button> {
       child: Container(
         padding: const EdgeInsets.fromLTRB(16, 12.5, 16, 12.5),
         decoration: BoxDecoration(
-            color: isSelected ? null : const Color.fromRGBO(241, 242, 248, 1),
+            color: isSelected ? null : CustomColorStyles.secondaryColor,
             boxShadow: isSelected
                 ? [
                     const BoxShadow(color: Color.fromRGBO(255, 255, 255, .7)),

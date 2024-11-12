@@ -27,7 +27,7 @@ class CustomRadioButton extends StatelessWidget {
       },
       child: SizedBox(
         height: 42.57,
-        width: 50,
+        width: 29,
         child: Stack(
           alignment: Alignment.center,
           children: [

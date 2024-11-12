@@ -33,7 +33,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
     return Container(
       padding: const EdgeInsets.only(right: 20, left: 5),
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(18),
           color: CustomColorStyles.secondaryColor,
           border: Border.all(color: const Color.fromRGBO(0, 0, 0, .05))),
       child: DropdownButtonHideUnderline(
@@ -54,7 +54,7 @@ class _CustomDropdownState extends State<CustomDropdown> {
                 child: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(18),
-                      color: CustomColorStyles.secondaryColor),
+                      color: const Color.fromRGBO(246, 241, 251, 1)),
                   height: 54.37,
                   margin: const EdgeInsets.symmetric(vertical: 4),
                   padding: const EdgeInsets.symmetric(horizontal: 10),
